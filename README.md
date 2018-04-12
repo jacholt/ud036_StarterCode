@@ -3,10 +3,14 @@ Source code for a Film Store website.
 
 film_store is a python application that lists all currently stored film information into a responsive grid system. All film entries are dynamically loaded from an array of stored film information and turned into instances of class 'Movie' using the 'Movie' class definition as stored in media.py.
 
+The code includes JQUERY search functionality and supporting information is dynamically added per film.
+
 Documentation
 -------------
 
 You should find the documentation for your version of film_store on [GitHub](https://github.com/jacholt/ud036_StarterCode).
+
+
 
 
 Install and Run
