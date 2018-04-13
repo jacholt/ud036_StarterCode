@@ -7,6 +7,25 @@ class Movie():
         
     def __init__(self,movie_title):
 
+    """
+    Definition of films, based on their name.
+
+    Creation of film objects, based on thier name. Populating title, description, poster art and video link. The class initially returns video information using an API search based on name and then uses the associated ID to return the video URL.
+
+    Parameters
+    ----------
+    arg1 : str
+        Self - used to reference the newly created object
+    arg2 : str
+        Film title 
+
+    Returns
+    -------
+    str
+        Detailed film information. Film name, film description, film poster jpeg and video URL 
+
+    """
+
         #create api connection to database holding movie information
         conn = httplib.HTTPSConnection("api.themoviedb.org")
         payload = "{}"
@@ -29,4 +48,8 @@ class Movie():
         conn.close()
         
     def show_trailer(self):
+
+    """
+    Launch the film trailer in a new browser window
+    """
         webbrowser.open(self.trailer_youtube_url)
